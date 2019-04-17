@@ -1,0 +1,31 @@
+{
+  "name": "test-sls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jest": "^22.4.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "jest": "^24.7.1",
+    "prettier": "^1.17.0",
+    "serverless-offline": "^4.9.4",
+    "serverless-webpack": "^5.2.0",
+    "webpack": "^4.30.0"
+  },
+  "dependencies": {
+    "natural": "^0.6.3",
+    "sentence-tokenizer": "^1.0.1"
+  }
+}

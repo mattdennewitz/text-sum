@@ -1,0 +1,28 @@
+service: text-summarization # NOTE: update this with your service name
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: us-east-1
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+custom:
+  webpack:
+    includeModules: false
+
+package:
+ exclude:
+   - .envrc
+
+functions:
+  summarizeText:
+    handler: handler.handleSummarization
+
+    events:
+      - http:
+          path: /summarize
+          method: post
