@@ -25,6 +25,7 @@
     "webpack": "^4.30.0"
   },
   "dependencies": {
+    "joi": "^14.3.1",
     "natural": "^0.6.3",
     "sentence-tokenizer": "^1.0.1"
   }

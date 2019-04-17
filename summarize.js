@@ -55,7 +55,7 @@ internals.createArticleSummary = (sentences, weights, threshold) => {
   return summary;
 };
 
-const summarize = value => {
+const summarize = (value, threshold) => {
   const tokenMap = {};
   const tokens = internals.tokenizeAndStem(value);
 
@@ -80,7 +80,7 @@ const summarize = value => {
   const summary = internals.createArticleSummary(
     sentences,
     sentenceScores,
-    1.5 * avgScore,
+    threshold * avgScore,
   );
 
   return summary;
